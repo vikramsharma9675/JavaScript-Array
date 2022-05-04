@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List</title>
+</head>
+
+<body>
+    <ol>
+        <li>The way of short array</li>
+    <ul>
+        <li id="One"></li>
+        <li id="Two"></li>
+        <li id="Three"></li>
+        <li id="Four"></li>
+    </ul>
+    <script>
+        const List1 = ["BMW", "Audi","Jaguar","Rolls Royce"];
+        document.getElementById("One").innerHTML = List1[0];
+        document.getElementById("Two").innerHTML = List1[1];
+        document.getElementById("Three").innerHTML = List1[2];
+        document.getElementById("Four").innerHTML = List1[3];
+    </script>
+   <li> The way of many number of elements in array.</li>
+    <p id="para"></p>
+    <script>
+        const List2=["BMW","Audi","Jaguar","Rolls Royce"];
+        let Car=List2.length;
+        let text="<ul>";
+            for(let i=0;i<Car;i++){
+                text +="<li>" + List2[i]+"</li>";
+            }
+text += "</ul>";
+document.getElementById("para").innerHTML = text;
+    </script>
+    </ol> 
+</body>
+
+</html>
